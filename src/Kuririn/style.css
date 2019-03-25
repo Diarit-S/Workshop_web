@@ -22,14 +22,14 @@ h1,h2,h3,h4,p,ul,div,span{
 
 @font-face {
   font-family: "Marston";
-  src: url("fonts/Marston.otf") format("opentype");
+  src: url("fonts/marston-webfont.woff2") format("woff2"), url("fonts/marston-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Marston";
-  src: url("fonts/Marston-Bold.otf") format("opentype");
+  src: url("fonts/marston-bold-webfont.woff2") format("woff2"), url("fonts/marston-bold-webfont.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
@@ -69,45 +69,51 @@ nav ul li:hover {
 }
 
 .firstContent {
-  left: 50%;
-
+  text-align: center;
+  color: white;
 }
 
 .firstContent h1 {
-	color: white;
   font-size: 35px;
-  margin-left: 25%;
+}
+
+.firstContent q {
+  font-size: 20px;
+  quotes: "\201C""\201D""\2018""\2019";
 }
 
 .firstContent img {
   width: 35vw;
-  position: relative;
-  top: 100px;
-  margin-left: 35%;
+  display: block;
+  margin: 20px auto 0px auto;
 }
 
 .secondContent {
 	color: white;
-	position: absolute;
-	width: 100%;
-  margin-top: 100px;
-  
-  
+	width: 100vw;
+  margin-top : 30px;
 }
 
 .secondContent iframe{
-  width: 80VW;
-  position: relative;
-  height: 80vh;
-  margin-bottom: 10%;
-  margin-left: 10%;
-  
+  width: 80vw;
+  max-width: 1920px;
+  height: calc(80vw * 0.56);
+  max-height: 1080px;
+  display: block;
+  margin: auto;
+  border: none;
 }
 
-.secondContent h2{
-  margin-left: 44%;
+.thirdContent {
+  margin-top: 50px;
+  color: white;
+  text-align: center;
 }
 
+.thirdContent h2 {
+  margin-bottom: 20px;
+}
 
-
-
+.thirdContent p {
+  margin-bottom: 50px;
+}
