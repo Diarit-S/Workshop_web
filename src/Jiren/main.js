@@ -19,4 +19,4 @@ for (let i = 0; i < 3; i++) {
     pElts[i].classList.remove('is-right');
     imgElts[i].classList.remove('is-btm');
   });
-};  
+};
